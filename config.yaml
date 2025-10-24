@@ -1,0 +1,57 @@
+# Binance Futures Trading Bot Configuration
+
+# Trading Parameters
+trading:
+  default_symbol: "BTCUSDT"
+  default_leverage: 10
+  max_leverage: 20
+  
+# Risk Management
+risk_management:
+  max_position_size_usdt: 1000
+  max_loss_per_trade_usdt: 100
+  daily_loss_limit_usdt: 500
+  max_open_orders: 10
+  
+# Order Execution
+execution:
+  # TWAP Configuration
+  twap:
+    default_chunks: 5
+    default_interval_seconds: 60
+    min_chunk_size_usdt: 10
+  
+  # Grid Trading Configuration
+  grid:
+    default_grid_levels: 10
+    min_grid_spacing_percent: 0.5
+    max_grid_spacing_percent: 5.0
+  
+  # Stop-Loss Configuration
+  stop_loss:
+    default_stop_percent: 2.0
+    trailing_stop_enabled: false
+    
+# API Configuration
+api:
+  request_timeout: 10
+  max_retries: 3
+  retry_delay: 1
+  
+# Logging Configuration
+logging:
+  level: "INFO"
+  console_output: true
+  file_output: true
+  log_file: "bot.log"
+  max_log_size_mb: 50
+  backup_count: 5
+  
+# Validation Rules
+validation:
+  min_order_size_usdt: 5
+  max_order_size_usdt: 100000
+  min_price: 0.01
+  max_price: 1000000
+  price_precision: 2
+  quantity_precision: 3
