@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuantumTrade | Premier Binance Futures Bot</title>
+    <meta name="description" content="Professional-grade AI-powered trading bot for Binance USDT-M Futures. Advanced strategies, real-time risk management, and glass-morphism dashboard.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+<body>
+    <div class="background-glow"></div>
+    <div class="dots-overlay"></div>
+
+    <nav class="navbar glass">
+        <div class="container nav-content">
+            <div class="logo">
+                <i class="ph ph-unite"></i>
+                <span>QuantumTrade</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#features">Features</a></li>
+                <li><a href="#strategies">Strategies</a></li>
+                <li><a href="#risk">Risk Management</a></li>
+                <li><a href="#docs">Documentation</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="btn btn-outline">Log in</button>
+                <button class="btn btn-primary">Get Started</button>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="hero container">
+            <div class="hero-text">
+                <span class="badge glass">v2.0 Now Live</span>
+                <h1>Master the Markets with <span class="gradient-text">Precision.</span></h1>
+                <p>A professional, production-ready CLI-based trading bot for Binance USDT-M Futures. Execute advanced strategies with institutional-grade stability.</p>
+                <div class="hero-btns">
+                    <button class="btn btn-primary btn-lg">Deploy Bot <i class="ph ph-rocket-launch"></i></button>
+                    <button class="btn btn-outline btn-lg">View Source <i class="ph ph-github-logo"></i></button>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-value">99.9%</span>
+                        <span class="stat-label">Uptime</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-value">< 50ms</span>
+                        <span class="stat-label">Latency</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-value">8+</span>
+                        <span class="stat-label">Order Types</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="dashboard-preview glass">
+                    <div class="dashboard-header">
+                        <div class="window-controls">
+                            <span></span><span></span><span></span>
+                        </div>
+                        <div class="dashboard-title">QuantumTrade Terminal</div>
+                    </div>
+                    <div class="dashboard-body">
+                        <div class="terminal-line"><span class="t-cyan">2024-10-24 12:30:45</span> | <span class="t-info">INFO</span> | [PLACING] MARKET | BTCUSDT | side=BUY</div>
+                        <div class="terminal-line"><span class="t-cyan">2024-10-24 12:30:46</span> | <span class="t-info">INFO</span> | [PLACED] MARKET | BTCUSDT | order_id=12345</div>
+                        <div class="terminal-line"><span class="t-cyan">2024-10-24 12:30:46</span> | <span class="t-success">SUCCESS</span> | [EXECUTION] BUY 0.001 BTCUSDT @ 65420.00</div>
+                        <div class="terminal-line"><span class="t-cyan">2024-10-24 12:30:50</span> | <span class="t-info">INFO</span> | [GRID] 10/10 Levels Active | PnL: <span class="t-success">+24.50 USDT</span></div>
+                        <div class="chart-mockup">
+                            <div class="bar" style="height: 40%"></div>
+                            <div class="bar" style="height: 60%"></div>
+                            <div class="bar" style="height: 45%"></div>
+                            <div class="bar" style="height: 80%"></div>
+                            <div class="bar" style="height: 55%"></div>
+                            <div class="bar" style="height: 90%"></div>
+                            <div class="bar" style="height: 70%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="features" class="features container">
+            <h2 class="section-title">Institutional Grade <span class="gradient-text">Execution</span></h2>
+            <div class="feature-grid">
+                <div class="feature-card glass">
+                    <i class="ph ph-lightning"></i>
+                    <h3>Instant Market Orders</h3>
+                    <p>Execute trades instantly with reduce-only support and full input validation before API calls.</p>
+                </div>
+                <div class="feature-card glass">
+                    <i class="ph ph-chart-line-up"></i>
+                    <h3>Advanced Limit Orders</h3>
+                    <p>Full control with Post-only (maker), TIF (GTC, IOC, FOK), and precision formatting.</p>
+                </div>
+                <div class="feature-card glass">
+                    <i class="ph ph-shield-check"></i>
+                    <h3>Risk Management</h3>
+                    <p>Position size limits, account balance checks, and real-time risk metrics monitoring.</p>
+                </div>
+                <div class="feature-card glass">
+                    <i class="ph ph-layout"></i>
+                    <h3>Grid Trading</h3>
+                    <p>Automated buy-low/sell-high within custom price ranges. Neutral, Long, and Short modes.</p>
+                </div>
+                <div class="feature-card glass">
+                    <i class="ph ph-timer"></i>
+                    <h3>TWAP Integration</h3>
+                    <p>Split large orders over time to minimize market impact with configurable intervals.</p>
+                </div>
+                <div class="feature-card glass">
+                    <i class="ph ph-git-merge"></i>
+                    <h3>OCO Orders</h3>
+                    <p>One-Cancels-the-Other logic for simultaneous take-profit and stop-loss placement.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="risk" class="risk-section glass container">
+            <div class="risk-content">
+                <h2>Built with <span class="gradient-text">Security</span> First</h2>
+                <div class="risk-items">
+                    <div class="risk-item">
+                        <i class="ph ph-lock-key"></i>
+                        <div>
+                            <h4>Secrets Management</h4>
+                            <p>All API keys and credentials are managed via environment variables and never committed to source.</p>
+                        </div>
+                    </div>
+                    <div class="risk-item">
+                        <i class="ph ph-warning-circle"></i>
+                        <div>
+                            <h4>Daily Loss Limits</h4>
+                            <p>Hard-coded risk limits that prevent catastrophic losses by monitoring daily account metrics.</p>
+                        </div>
+                    </div>
+                    <div class="risk-item">
+                        <i class="ph ph-file-text"></i>
+                        <div>
+                            <h4>Rotating Logs</h4>
+                            <p>Detailed structured logging with rotating files ensures you never lose history or disk space.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="risk-image">
+                <!-- Mockup of a security shield or similar -->
+                <div class="shield-graphic">
+                    <i class="ph ph-shield-plus"></i>
+                </div>
+            </div>
+        </section>
+
+        <section id="docs" class="docs-cta container">
+            <div class="cta-card glass">
+                <h2>Ready to automate your trading?</h2>
+                <p>Get started in minutes with our comprehensive documentation and setup guide.</p>
+                <div class="cta-btns">
+                    <button class="btn btn-primary">Read Docs</button>
+                    <button class="btn btn-outline">Check Setup Guide</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="container">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <div class="logo">
+                    <i class="ph ph-unite"></i>
+                    <span>QuantumTrade</span>
+                </div>
+                <p>Institutional grade trading automation for the modern trader.</p>
+            </div>
+            <div class="footer-links">
+                <div class="link-group">
+                    <h4>Product</h4>
+                    <a href="#">Features</a>
+                    <a href="#">Strategies</a>
+                    <a href="#">Security</a>
+                </div>
+                <div class="link-group">
+                    <h4>Resources</h4>
+                    <a href="#">Documentation</a>
+                    <a href="#">API Reference</a>
+                    <a href="#">Setup Guide</a>
+                </div>
+                <div class="link-group">
+                    <h4>Company</h4>
+                    <a href="#">About</a>
+                    <a href="#">Github</a>
+                    <a href="#">Support</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 QuantumTrade. All rights reserved. Trading involves significant risk.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
