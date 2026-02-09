@@ -1,58 +1,62 @@
-# Binance Futures Trading Bot
+# 🌌 QuantumTrade: Binance Futures Trading Bot
 
-A professional, production-ready CLI-based trading bot for Binance USDT-M Futures with support for multiple order types, advanced strategies, and comprehensive risk management.
+A professional, institutional-grade trading platform for Binance USDT-M Futures. Featuring a **production-ready CLI** and a **stunning Glassmorphism Web UI**, QuantumTrade supports advanced order types, algorithmic strategies, and comprehensive risk management.
 
-## 🚀 Features
+## 🚀 Key Highlights
 
-### Core Order Types (50% Weight)
-- ✅ **Market Orders**: Instant execution at current market price
-- ✅ **Limit Orders**: Execute at specific price with full control
-  - Post-only (maker) orders
-  - Time-in-force options (GTC, IOC, FOK)
-  - Reduce-only mode
+- 💎 **Modern Web UI**: A beautiful, glass-morphism landing page with real-time trading simulations.
+- ⚡ **Institutional Execution**: Optimized for low-latency market and limit order execution.
+- 🤖 **Advanced Algorithmic Strategies**: TWAP execution and automated Grid Trading.
+- 🛡️ **Fail-Safe Risk Management**: Built-in position limits, daily loss thresholds, and balance verification.
+- 📊 **Structured Observability**: Color-coded CLI output and rotating audit logs.
 
-### Advanced Orders (30% Weight)
-- ✅ **Stop-Limit Orders**: Trigger limit order when stop price is hit
-- ✅ **OCO Orders** (One-Cancels-the-Other): Simultaneous take-profit and stop-loss
-- ✅ **TWAP** (Time-Weighted Average Price): Split large orders into smaller chunks over time
-- ✅ **Grid Trading**: Automated buy-low/sell-high within a price range
+## ✨ Features
 
-### Validation & Error Handling (10% Weight)
-- ✅ Comprehensive input validation (symbol, quantity, price)
-- ✅ Risk limit checks (position size, account balance)
-- ✅ Price precision and quantity formatting
-- ✅ Graceful error handling with detailed logging
+### 🌐 Modern Web Interface
+- ✅ **Glassmorphism Design**: Premium visual aesthetic with backdrop-blur effects.
+- ✅ **Interactive Terminal**: Real-time trade log simulations.
+- ✅ **Performance Visualization**: Simulated equity curves and performance metrics.
+- ✅ **Fully Responsive**: Optimized for desktop and mobile viewing.
 
-### Logging & Documentation (10% Weight)
-- ✅ Structured logging with timestamps and error traces
-- ✅ Color-coded console output
-- ✅ Rotating log files with size limits
-- ✅ API call tracking
-- ✅ Trade execution logs
+### ⚙️ Core Order Types
+- ✅ **Market Orders**: Instant execution with reduce-only support.
+- ✅ **Limit Orders**: Precision pricing with Post-only (maker) and TIF (GTC, IOC, FOK) options.
+- ✅ **Advanced Validation**: Formatting for price precision and lot size according to Binance rules.
+
+### 📈 Advanced Orders & Strategies
+- ✅ **Stop-Limit Orders**: Smart trigger logic for exits.
+- ✅ **OCO (One-Cancels-the-Other)**: Simultaneous TP/SL management.
+- ✅ **TWAP**: Time-Weighted Average Price execution for large orders.
+- ✅ **Grid Trading**: Automated range-bound profit capture (Neutral, Long, Short).
+
+### 🔒 Security & Validation
+- ✅ **Strict Input Validation**: Pre-flight checks on symbols, quantities, and prices.
+- ✅ **Risk Limit Enforcement**: Prevents over-leveraging and account-blowing trades.
+- ✅ **Secrets Management**: Secure API credential handling via `.env`.
 
 ## 📁 Project Structure
 
 ```
 Trading Bot/
+├── index.html                 # QuantumTrade Landing Page
+├── style.css                  # Premium Design System
+├── script.js                   # Interactive UI Logic
 ├── src/
 │   ├── __init__.py
-│   ├── config_loader.py      # Configuration management
-│   ├── logger.py              # Structured logging system
-│   ├── validator.py           # Input validation
-│   ├── market_orders.py       # Market & basic limit orders
-│   ├── limit_orders.py        # Advanced limit orders
-│   ├── bot.py                 # Main bot orchestrator
+│   ├── config_loader.py       # Configuration management
+│   ├── logger.py               # Structured logging system
+│   ├── validator.py            # 400+ lines of validation logic
+│   ├── market_orders.py        # Market & basic limit orders
+│   ├── limit_orders.py         # Advanced limit orders
+│   ├── bot.py                  # Main bot orchestrator
 │   └── advanced/
-│       ├── __init__.py
-│       ├── oco.py             # OCO order implementation
-│       ├── twap.py            # TWAP execution
-│       └── grid_strategy.py   # Grid trading strategy
-├── main.py                    # CLI entry point
-├── config.yaml                # Trading configuration
-├── requirements.txt           # Python dependencies
-├── .env.example              # Environment variables template
-├── .gitignore                # Git ignore rules
-└── README.md                 # This file
+│       ├── oco.py              # OCO order implementation
+│       ├── twap.py             # TWAP execution strategy
+│       └── grid_strategy.py    # Grid trading automation
+├── main.py                     # Professional CLI entry point
+├── config.yaml                 # User-defined trading parameters
+├── requirements.txt            # Python dependencies
+└── .env.example               # Environment variables template
 ```
 
 ## 🛠️ Installation
